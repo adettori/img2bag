@@ -242,6 +242,7 @@ class Img2BagConverter:
                 'RGB': 'rgb8',
                 'RGBA': 'rgba8',
                 'L': 'mono8',
+                'I': '16UC1',
             }
             if img.mode not in image_encoding_map:
                 msg = f"Unsupported image mode '{img.mode}' for file '{file_path}'. Skipping..."
